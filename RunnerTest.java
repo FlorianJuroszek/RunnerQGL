@@ -8,8 +8,8 @@ import static org.junit.Assert.*;
 public class RunnerTest {
 
 
-    @Test
-    public void map1() {
+    @Test @Ignore
+    public void map11() {
         Runner run = new Runner();
         try{
             run.map11("src/main/resources/map11.json");
@@ -17,22 +17,23 @@ public class RunnerTest {
 
         }
     }
-//    @Test
-//    public void map2() {
-//        Runner run = new Runner();
-//        try{
-//            run.map12("src/main/resources/map12.json");
-//        }catch(Exception e){
-//
-//        }
-//    }
-//    @Test
-//    public void map3() {
-//        Runner run = new Runner();
-//        try{
-//            run.map13("src/main/resources/map13.json");
-//        }catch(Exception e){
-//
-//        }
-//    }
+
+    @Test @Ignore
+    public void map12() {
+        Runner run = new Runner();
+        try{
+            run.map12("src/main/resources/map12.json");
+        }catch(Exception e){
+
+        }
+    }
+    @Test @Ignore
+    public void map13() {
+        Runner run = new Runner();
+        try{
+            run.map13("src/main/resources/map13.json");
+        }catch(Exception e){
+
+        }
+    }
 }

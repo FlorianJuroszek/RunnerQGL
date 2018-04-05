@@ -21,15 +21,14 @@ public class Runner {
 
         run(Explorer.class)
                 .exploring(mapLocation.toFile())
-                .withName("isx")
+                .withName("isc")
                 .withSeed(0x161D552A4A22E2A1L)
-                .startingAt(159, 159, "NORTH")
-                .backBefore(30000)
-                .withCrew(15)
-                .collecting(2000, "WOOD")
-                .collecting(100,  "FUR")
-                .collecting(400,   "QUARTZ")
-                .collecting(2,   "RUM")
+                .startingAt(1, 1, "EAST")
+                .backBefore(20000)
+                .withCrew(3)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(5,   "FLOWER")
                 .storingInto(".")
                 .fire();
     }
@@ -89,6 +88,136 @@ public class Runner {
                 .collecting(7000, "WOOD")
                 .collecting(20,   "QUARTZ")
                 .collecting(5,   "FLOWER")
+                .storingInto(".")
+                .fire();
+    }
+
+    public void map12(String s) throws Exception {
+        Path mapLocation = Paths.get(s);
+        if (! mapLocation.toFile().exists()){
+            throw new IllegalArgumentException("Your map does not exist, aborting");
+        }
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xAB3DB02B0F1D78C6L)
+                .startingAt(1, 1, "EAST")
+                .backBefore(20000)
+                .withCrew(12)
+                .collecting(4000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(1000,   "FUR")
+                .collecting(5,   "RUM")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xAB3DB02B0F1D78C6L)
+                .startingAt(1, 1, "SOUTH")
+                .backBefore(20000)
+                .withCrew(12)
+                .collecting(4000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(1000,   "FUR")
+                .collecting(5,   "RUM")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xAB3DB02B0F1D78C6L)
+                .startingAt(159, 159, "NORTH")
+                .backBefore(20000)
+                .withCrew(12)
+                .collecting(4000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(1000,   "FUR")
+                .collecting(5,   "RUM")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xAB3DB02B0F1D78C6L)
+                .startingAt(159, 159, "WEST")
+                .backBefore(20000)
+                .withCrew(12)
+                .collecting(4000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(1000,   "FUR")
+                .collecting(5,   "RUM")
+                .storingInto(".")
+                .fire();
+    }
+
+    public void map13(String s) throws Exception {
+        Path mapLocation = Paths.get(s);
+        if (! mapLocation.toFile().exists()){
+            throw new IllegalArgumentException("Your map does not exist, aborting");
+        }
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xB8743F260B1D24EFL)
+                .startingAt(159, 159, "NORTH")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(400,   "SUGAR_CANE")
+                .collecting(5,   "RUM")
+                .collecting(4,"ORE")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xB8743F260B1D24EFL)
+                .startingAt(159, 159, "WEST")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(400,   "SUGAR_CANE")
+                .collecting(5,   "RUM")
+                .collecting(4,"ORE")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xB8743F260B1D24EFL)
+                .startingAt(1, 1, "EAST")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(400,   "SUGAR_CANE")
+                .collecting(5,   "RUM")
+                .collecting(4,"ORE")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xB8743F260B1D24EFL)
+                .startingAt(1, 1, "SOUTH")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .collecting(400,   "SUGAR_CANE")
+                .collecting(5,   "RUM")
+                .collecting(4,"ORE")
                 .storingInto(".")
                 .fire();
     }
