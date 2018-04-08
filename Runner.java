@@ -221,4 +221,117 @@ public class Runner {
                 .storingInto(".")
                 .fire();
     }
+
+    public void map14(String s) throws Exception {
+        Path mapLocation = Paths.get(s);
+        if (! mapLocation.toFile().exists()){
+            throw new IllegalArgumentException("Your map does not exist, aborting");
+        }
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xF8C2F759DFAC20BAL)
+                .startingAt(1, 1, "EAST")
+                .backBefore(10000)
+                .withCrew(4)
+                .collecting(7000, "WOOD")
+                .collecting(500,   "FUR")
+                .collecting(5,   "FLOWER")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xF8C2F759DFAC20BAL)
+                .startingAt(1, 1, "SOUTH")
+                .backBefore(10000)
+                .withCrew(4)
+                .collecting(7000, "WOOD")
+                .collecting(500,   "FUR")
+                .collecting(5,   "FLOWER")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xF8C2F759DFAC20BAL)
+                .startingAt(159, 159, "NORTH")
+                .backBefore(10000)
+                .withCrew(4)
+                .collecting(7000, "WOOD")
+                .collecting(500,   "FUR")
+                .collecting(5,   "FLOWER")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0xF8C2F759DFAC20BAL)
+                .startingAt(159, 159, "WEST")
+                .backBefore(10000)
+                .withCrew(4)
+                 .collecting(7000, "WOOD")
+                .collecting(500,   "FUR")
+                .collecting(5,   "FLOWER")
+                .storingInto(".")
+                .fire();
+    }
+
+    public void map10(String s) throws Exception {
+        Path mapLocation = Paths.get(s);
+        if (! mapLocation.toFile().exists()){
+            throw new IllegalArgumentException("Your map does not exist, aborting");
+        }
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0x49FCBBF35EDDC6EAL)
+                .startingAt(1, 1, "EAST")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0x49FCBBF35EDDC6EAL)
+                .startingAt(1, 1, "SOUTH")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .storingInto(".")
+                .fire();
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0x49FCBBF35EDDC6EAL)
+                .startingAt(159, 159, "NORTH")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .storingInto(".")
+                .fire();
+
+        run(Explorer.class)
+                .exploring(mapLocation.toFile())
+                .withName("isc")
+                .withSeed(0x49FCBBF35EDDC6EAL)
+                .startingAt(159, 159, "WEST")
+                .backBefore(15000)
+                .withCrew(7)
+                .collecting(7000, "WOOD")
+                .collecting(20,   "QUARTZ")
+                .storingInto(".")
+                .fire();
+    }
 }
